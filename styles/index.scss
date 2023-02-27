@@ -1,0 +1,13 @@
+.accountForm {
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #EE6409;
+        color: #ee6409;
+        text-decoration: none;
+    }
+}
