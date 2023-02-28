@@ -10,9 +10,15 @@
 <body>
     <div class="accountForm__buttons">
         <a href="#" class="accountForm__button">Физическое лицо</a>
-        <a href="#" class="accountForm__button">Юридичексое лицо</a>
+        <a href="#" class="accountForm__button isActive">Юридическое лицо</a>
     </div>
     <form action="#" class="accountForm__form">
+        <div class="accountForm__title">Войти или зарегистрироваться</div>
+        <label class="accountForm__field">
+            <div class="accountForm__input">
+                <input type="text" placeholder="Телефон или Email">
+            </div>
+        </label>
         <label class="accountForm__field">
             <div class="accountForm__label">
                 Какой-то заголовок
@@ -21,6 +27,28 @@
                 <input type="text">
             </div>
         </label>
+        <label class="accountForm__field accountForm__checkbox">
+            <div class="accountForm__input">
+                <input type="checkbox">
+            </div>
+            <div class="accountForm__label">
+                Запомнить меня на этом устройстве
+            </div>
+        </label>
+        <button type="submit" class="accountForm__submit">Войти</button>
+
+        <div class="accountForm__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </div>
+        <div class="accountForm__or">
+            <div class="accountForm__title">Или</div>
+            <div class="accountForm__enter">
+                <div class="icon">
+                    <img src="images/parol.png" width="100%" alt="">
+                </div>
+                <a href="" class="button">Войти с паролем</a>
+            </div>
+        </div>
     </form>
 </body>
 </html>

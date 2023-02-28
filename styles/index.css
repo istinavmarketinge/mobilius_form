@@ -1,10 +1,140 @@
 .accountForm__buttons {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 30px; }
+
+@media all and (max-width: 768px) {
+  .accountForm__buttons {
+    flex-direction: column; } }
 
 .accountForm__button {
   display: block;
-  padding: 10px 15px;
+  padding: 7px 15px;
   border: 1px solid #EE6409;
   color: #ee6409;
-  text-decoration: none; }
+  text-decoration: none;
+  border-radius: 10px; }
+
+@media all and (max-width: 768px) {
+  .accountForm__button {
+    width: 100%; }
+  .accountForm__button:not(:last-child) {
+    margin-bottom: 10px; } }
+
+@media all and (min-width: 769px) {
+  .accountForm__button:not(:last-child) {
+    margin-right: 20px; } }
+
+.accountForm__button.isActive {
+  background-image: linear-gradient(to right, #EE6409, #F77D0C, #EE6409, #F77D0C);
+  color: #fff;
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out; }
+
+.accountForm__button.isActive:hover {
+  background-position: 100% 0; }
+
+.accountForm__form {
+  background: #ffffff;
+  box-shadow: 0px 12px 64px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box; }
+
+@media all and (max-width: 768px) {
+  .accountForm__form {
+    padding: 20px; } }
+
+.accountForm__title {
+  color: #000;
+  font-size: 19px;
+  line-height: 150%;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #EE6409;
+  display: inline-block; }
+
+.accountForm__field {
+  margin-bottom: 15px;
+  display: block; }
+
+.accountForm__label {
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: 0.3;
+  cursor: pointer; }
+
+.accountForm__input input:not([type="checkbox"]):not([type="radio"]) {
+  width: 100%;
+  background: #F2F2F2;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  color: #000000;
+  border: none;
+  box-shadow: none;
+  padding: 12px 14px 9px;
+  height: auto;
+  box-sizing: border-box; }
+
+.accountForm__checkbox {
+  display: flex;
+  align-items: center; }
+
+.accountForm__checkbox .accountForm__label {
+  margin-left: 10px;
+  margin-bottom: 0; }
+
+.accountForm__submit {
+  padding: 0 15px;
+  background-color: var(--askaron-voicepassword-login-main-color);
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  height: 48px !important;
+  width: 180px;
+  background-image: linear-gradient(to right, #EE6409, #F77D0C, #EE6409, #F77D0C);
+  color: #fff;
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 4px;
+  width: 100%; }
+
+.accountForm__submit:hover {
+  background-position: 100% 0; }
+
+.accountForm__text {
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: 0.3;
+  cursor: pointer;
+  margin-top: 10px; }
+
+.accountForm__or {
+  margin-top: 30px; }
+
+.accountForm__enter {
+  display: flex;
+  align-items: center; }
+
+.accountForm__enter .icon {
+  width: 25px;
+  margin-right: 15px; }
+
+.accountForm__enter .button {
+  width: calc(100% - 40px);
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #EE6409;
+  color: #ee6409;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center; }
